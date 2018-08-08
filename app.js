@@ -50,14 +50,14 @@ app.post("/contact/send", function (req, res) {
     var transporter = nodemailer.createTransport({
         service:'Gmail',
         auth: {
-            user:'veehilan@gmail.com',
-            pass:'chinaphone'
+            user:'example@gmail.com',
+            pass:'password'
         }
     });
 
     var mailOptions = {
-        from: 'Victor Churchill <panveelcorp@gmail.com>',
-        to: 'panveelcorp@gmail.com',
+        from: 'Victor Churchill <email@gmail.com>',
+        to: 'email@gmail.com',
         subject:" Website Submission",
         text:'You have a submission with the following details... Name: '+ req.body.name+ "Email: " + req.body.email+ "Message: " + req.body.message,
         html:'<p>You have a submission with the following details... Name: </p><ul><li>Name: '+req.body.name+'</li><li>Email: '+req.body.email+'</li><li>Message: '+req.body.message+'</li></ul>'
