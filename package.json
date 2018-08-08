@@ -1,0 +1,21 @@
+{
+  "name": "express_website",
+  "version": "1.0.0",
+  "description": "simple server",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "victor churchill",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "*",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "*",
+    "express": "*",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.15.6",
+    "jade": "*",
+    "nodemailer": "*"
+  }
+}
